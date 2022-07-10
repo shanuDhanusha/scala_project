@@ -1,0 +1,93 @@
+
+object Main{
+
+
+  def main(args: Array[String]): Unit = {
+
+
+//Q1,Q2
+   var i,j,k=2
+   var m,n=5
+   var f=12.0f
+     var g=4.0f
+  var c='X'
+
+    //Q3
+    println(k+12*m)
+    println(m/j)
+    println(n%j)
+    println(m/j*j)
+    println(f+(10*5)+g)
+   i+=1
+    println(i*n)
+    //println(++i*n)
+
+
+  }
+
+
+
+}
+//--------------------------------------------------
+object Main {
+  def main(args: Array[String]): Unit = {
+
+    var a=2
+    var b=3
+    var c=4
+    var d=5
+     
+    
+    b-=1
+    d-=1
+    println(b*a+c*d)
+    
+    a+=1
+    println(a)
+
+    c+=1
+    println(c)
+    println(c*a)
+
+
+
+  }
+}
+
+
+
+//------------------------------------------------
+
+//4-a
+
+object Main {
+
+  def sal(n:Int)(a:Int)=(n*250+a*85)*0.88
+
+
+
+
+  def main(args: Array[String]): Unit = {
+
+    print("Enter employee working hours=")
+     var worh=readInt()
+    print("\nEnter employee OTP hours=")
+    var hotp=readInt()
+
+    if((0<worh&& worh<=40)&&(0<hotp&& hotp<=30)){
+    println("take home salary="+  sal(worh)(hotp))
+  // println("take home salary="+ salary)
+
+
+    }else{
+
+      println("work hours or OTP hours is not valid ")
+
+
+    }
+  }
+}
+
+
+
+
